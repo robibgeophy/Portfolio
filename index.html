@@ -6,11 +6,13 @@
     <title>Mi Portafolio de Proyectos</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; }
-        header { text-align: center; padding: 40px 20px; background: #23324a; color: white; } /* Color verde Excel */
+        header { text-align: center; padding: 40px 20px; background: #23324a; color: white; }
         .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1-fr)); gap: 20px; }
+        /* Se corrigió '1-fr' por '1fr' para evitar fallos en el diseño de rejilla */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .card img { width: 100%; border-radius: 4px; }
+        /* Se añade 'height' y 'object-fit' para mantener las vistas previas uniformes */
+        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
         .btn { display: inline-block; background: #217346; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
     </style>
 </head>
@@ -28,6 +30,10 @@
             <!-- PROYECTO 1 -->
             <div class="card">
                 <h3>Diagrama Gantt de Pedidos v1.0</h3>
+                
+                <!-- VISTA PREVIA CONFIGURADA CON TU ID REAL DE DRIVE -->
+                <img src="https://drive.google.com/file/d/10zl9HmRHNAD0A6-Qzkrmif5zbXa4pI1Q/view?usp=drive_link" alt="Vista previa Diagrama Gantt">
+                
                 <p>Un diagrama Gantt con formulas y formato condicional para monitorear las fechas y estados de los pedidos de una empresa.</p>
                 <p><strong>Herramientas:</strong> Fórmulas, Formato condicional.</p>
                 <a href="https://docs.google.com/spreadsheets/d/1dM-BEz3fgYAMIRD1cf7xmYmnnHfo5f5g/edit?usp=drive_link&ouid=101282839461212960197&rtpof=true&sd=true" target="_blank" class="btn">Ver/Descargar Proyecto</a>
@@ -36,6 +42,10 @@
             <!-- PROYECTO 2 -->
             <div class="card">
                 <h3>Automatización con Macros (VBA)</h3>
+                
+                <!-- REEMPLAZA EL ID CUANDO TENGAS LA CAPTURA EN DRIVE -->
+                <img src="https://drive.google.com/file/d/10zl9HmRHNAD0A6-Qzkrmif5zbXa4pI1Q/view?usp=drive_link" alt="Vista previa Automatización VBA">
+                
                 <p>Macro que limpia y organiza un reporte de inventario de 5,000 filas en solo 3 segundos.</p>
                 <p><strong>Herramientas:</strong> VBA, Macros, Limpieza de datos.</p>
                 <a href="TU_ENLACE_DE_DESCARGA_AQUI" target="_blank" class="btn">Ver/Descargar Proyecto</a>
