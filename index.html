@@ -14,15 +14,37 @@
         .btn { display: inline-block; background: #217346; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
     </style>
 </head>
+
+
 <body>
+
+
+
+
+
 
     <header>
         <h1>Mi Portafolio de Proyectos</h1>
         <p>Especialista en Excel y Análisis de Datos.</p>
     </header>
 
-    <div class="container">
-        <h2>Mis Proyectos</h2>
+
+
+<div class="tabs">
+	<button class="tab-btn active" onclick="mostratCategoria('excel')">
+		Excel
+	</button>
+
+	<button class="tab-btn" onclick="mostrarCategoria('rstudio')">
+		RStudio
+	</button>
+</div>
+
+
+
+<!-- PROYECTOS EXCEL -->
+    <div id="excel" class="categoria">
+        
         <div class="grid">
 
             <!-- PROYECTO 1 -->
@@ -37,7 +59,17 @@
                 <a href="https://docs.google.com/spreadsheets/d/1dM-BEz3fgYAMIRD1cf7xmYmnnHfo5f5g/edit?usp=drive_link&ouid=101282839461212960197&rtpof=true&sd=true" target="_blank" class="btn">Ver/Descargar Proyecto</a>
             </div>
 
-            <!-- PROYECTO 2 -->
+
+        </div>
+    </div>
+
+
+<!-- PROYECTOS R -->
+    <div id="rstudio" class="categoria" style="display:none;">
+        
+        <div class="grid">
+
+         <!-- PROYECTO 1 -->
             <div class="card">
                 <h3>Diagrama Sankey en Inventario v1.0</h3>
                 
@@ -52,18 +84,11 @@
 		   Descargar Script
 		</a>
             </div>
-	
 
-
-        </div>
-    </div>
-
-	<div class="container">
-		<div class="grid">
-	    <!-- PROYECTO 3 -->
-		<div class="card">
+	 <!-- PROYECTO 2 -->
+		<div id="rstudio" class="categoria" style="display:none;">
 		<h3>Calendario de cantidades/porcentajes v1.0 </h3>
-		<img src="img/RStudio/Calendario_v1.png" alt "Vista previa calendR">
+		<img src="img/RStudio/Calendario_v1.png" alt "Vista previa calendR"
 
 		<p>Archivo .R que genera cantidades aleatorias simulando porcentajes o métricas para días del año, desplegados en un calendario.</p>
 		<p><strong>Herramientas:</strong> Librería(calendR).</p>
@@ -72,9 +97,14 @@
 		class="btn">
 		Descargar Script
 		</a>
-		</div>		
-		</div>
-	</div>
+		</div>	
+
+
+
+        </div>
+    </div>
+
+
 		
 </body>
 </html>
