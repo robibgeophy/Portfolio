@@ -1,20 +1,18 @@
-<script>
-function mostrarCategoria(id){
+function mostrarCategoria(event, id){
 
-	let categorías = document.querySelectorAll('.categoria');
+    let categorias = document.querySelectorAll('.categoria');
 
-	categorías.forEach(cat => {
-		cat.style.display = 'none';
-	});
+    categorias.forEach(cat => {
+        cat.style.display = 'none';
+    });
 
-	document.getElementById(id).style.display = 'block';
+    document.getElementById(id).style.display = 'block';
 
-	let botones = document.querySelectorAll('.tab-btn');
+    let botones = document.querySelectorAll('.tab-btn');
 
-	botones.forEach(btn => {
-		btn.classList.remove('active');
-	});
+    botones.forEach(btn => {
+        btn.classList.remove('active');
+    });
 
-	evento.target.classList.add('active');
+    event.target.classList.add('active');
 }
-</script>
