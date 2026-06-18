@@ -2,17 +2,17 @@ function mostrarCategoria(event, id) {
 
     const categorias = document.querySelectorAll('.categoria');
 
-    categorias.forEach(categoria => {
-        categoria.style.display = 'none';
+    categorias.forEach(cat => {
+        cat.classList.remove('activa');
     });
 
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(id).classList.add('activa');
 
     const botones = document.querySelectorAll('.tab-btn');
 
-    botones.forEach(boton => {
-        boton.classList.remove('active');
+    botones.forEach(btn => {
+        btn.classList.remove('active');
     });
 
-    event.target.classList.add('active');
+    event.currentTarget.classList.add('active');
 }
