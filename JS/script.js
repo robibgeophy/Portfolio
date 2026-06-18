@@ -1,17 +1,17 @@
-function mostrarCategoria(event, id){
+function mostrarCategoria(event, id) {
 
-    let categorias = document.querySelectorAll('.categoria');
+    const categorias = document.querySelectorAll('.categoria');
 
-    categorias.forEach(cat => {
-        cat.style.display = 'none';
+    categorias.forEach(categoria => {
+        categoria.style.display = 'none';
     });
 
     document.getElementById(id).style.display = 'block';
 
-    let botones = document.querySelectorAll('.tab-btn');
+    const botones = document.querySelectorAll('.tab-btn');
 
-    botones.forEach(btn => {
-        btn.classList.remove('active');
+    botones.forEach(boton => {
+        boton.classList.remove('active');
     });
 
     event.target.classList.add('active');
