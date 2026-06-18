@@ -1,8 +1,25 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f9;
+
+    background:
+    radial-gradient(
+        circle at top center,
+        #1e4d8f 0%,
+        #10233d 40%,
+        #0d1117 100%
+    );
+
+    min-height:100vh;
 }
 
 header {
