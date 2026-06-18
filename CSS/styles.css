@@ -79,3 +79,69 @@ header {
 .btn:hover {
     background: #1b5f38;
 }
+
+
+/* PERFIL */
+
+.perfil{
+    display:flex;
+    justify-content:center;
+    margin:20px auto 40px;
+    padding:0 20px;
+}
+
+.perfil-contenido{
+    max-width:1000px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:35px;
+}
+
+.perfil h2{
+    color:#5ea8ff;
+    margin-bottom:15px;
+}
+
+.perfil h3{
+    color:#5ea8ff;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.perfil p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.perfil ul{
+    margin-left:20px;
+    line-height:1.8;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.skills span{
+    background:#1d4ed8;
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:0.9rem;
+}
+
