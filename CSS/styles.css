@@ -41,6 +41,10 @@ header {
     display: none;
 }
 
+.categoria.activa {
+    display: block;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
