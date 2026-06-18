@@ -4,105 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio de Proyectos</title>
-    
-    
-<link rel="stylesheet" href="CSS/styles.css">
 
-
-
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
-
 
 <body>
 
-
-
-
-
-
-    <header>
-        <h1>Mi Portafolio de Proyectos</h1>
-        <p>Especialista en Excel y Análisis de Datos.</p>
-    </header>
-
-
+<header>
+    <h1>Mi Portafolio de Proyectos</h1>
+    <p>Especialista en Excel y Análisis de Datos</p>
+</header>
 
 <div class="tabs">
-	<button class="tab-btn active" 	onclick="mostratCategoria(event,'excel')">
-		Excel
-	</button>
+    <button class="tab-btn active"
+            onclick="mostrarCategoria(event,'excel')">
+        Excel
+    </button>
 
-	<button class="tab-btn" 
-	onclick="mostrarCategoria(event,'rstudio')">
-		RStudio
-	</button>
+    <button class="tab-btn"
+            onclick="mostrarCategoria(event,'rstudio')">
+        RStudio
+    </button>
 </div>
 
+<!-- ==================== EXCEL ==================== -->
 
+<div id="excel" class="categoria" style="display:block;">
 
-<!-- PROYECTOS EXCEL -->
-    <div id="excel" class="categoria">
-        
-        <div class="grid">
+    <div class="grid">
 
-            <!-- PROYECTO 1 -->
-            <div class="card">
-                <h3>Diagrama Gantt de Pedidos v1.0</h3>
-                
-                <!-- RUTA RELATIVA SEGURA -->
-                <img src="img/Microsoft_Excel/Gantt_v1.png" alt="Vista previa Diagrama Gantt">
-                
-                <p>Un diagrama Gantt con formulas y formato condicional para monitorear las fechas y estados de los pedidos de una empresa.</p>
-                <p><strong>Herramientas:</strong> Fórmulas, Formato condicional.</p>
-                <a href="https://docs.google.com/spreadsheets/d/1dM-BEz3fgYAMIRD1cf7xmYmnnHfo5f5g/edit?usp=drive_link&ouid=101282839461212960197&rtpof=true&sd=true" target="_blank" class="btn">Ver/Descargar Proyecto</a>
-            </div>
+        <div class="card">
+            <h3>Diagrama Gantt de Pedidos v1.0</h3>
 
+            <img src="img/Microsoft_Excel/Gantt_v1.png"
+                 alt="Vista previa Gantt">
 
+            <p>
+                Diagrama Gantt con fórmulas y formato condicional.
+            </p>
+
+            <a href="https://docs.google.com/spreadsheets/d/1dM-BEz3fgYAMIRD1cf7xmYmnnHfo5f5g/edit"
+               target="_blank"
+               class="btn">
+                Ver Proyecto
+            </a>
         </div>
+
+        <!-- NUEVOS PROYECTOS EXCEL -->
+        <div class="card">
+            <h3>Dashboard Comercial</h3>
+
+            <img src="img/Microsoft_Excel/dashboard.png"
+                 alt="Dashboard">
+
+            <p>
+                Dashboard para monitoreo de ventas.
+            </p>
+
+            <a href="#" class="btn">
+                Ver Proyecto
+            </a>
+        </div>
+
     </div>
 
+</div>
 
-<!-- PROYECTOS R -->
-    <div id="rstudio" class="categoria" style="display:none;">
-        
-        <div class="grid">
+<!-- ==================== RSTUDIO ==================== -->
 
-         <!-- PROYECTO 1 -->
-            <div class="card">
-                <h3>Diagrama Sankey en Inventario v1.0</h3>
-                
-                <!-- RUTA RELATIVA SEGURA -->
-                <img src="img/RStudio/Sankey_v1.jpeg" alt="Vista previa Automatización VBA">
-                
-                <p>Archivo .R que genera inventarios aleatorios para clasificarlos en base a categorías, y construye un diagrama de Sankey.</p>
-                <p><strong>Herramientas:</strong> Librerías (dplyr,networkD3).</p>
-                <a href="RStudio_Projects/Sankey_v1.R" 
-		   download="Sankey_v1.R"
-		   class="btn">
-		   Descargar Script
-		</a>
-            </div>
+<div id="rstudio" class="categoria">
 
-	 <!-- PROYECTO 2 -->
-		<div id="rstudio" class="categoria" style="display:none;">
-		<h3>Calendario de cantidades/porcentajes v1.0 </h3>
-		<img src="img/RStudio/Calendario_v1.png" alt "Vista previa calendR"
+    <div class="grid">
 
-		<p>Archivo .R que genera cantidades aleatorias simulando porcentajes o métricas para días del año, desplegados en un calendario.</p>
-		<p><strong>Herramientas:</strong> Librería(calendR).</p>
-		<a href="RStudio_Projects/Calendario_v1.R"
-		download="Calendario_v1.R"
-		class="btn">
-		Descargar Script
-		</a>
-		</div>	
+        <div class="card">
+            <h3>Diagrama Sankey en Inventario v1.0</h3>
 
+            <img src="img/RStudio/Sankey_v1.jpeg"
+                 alt="Diagrama Sankey">
 
+            <p>
+                Script R que genera un diagrama Sankey.
+            </p>
 
+            <a href="RStudio_Projects/Sankey_v1.R"
+               download
+               class="btn">
+                Descargar Script
+            </a>
         </div>
+
+        <div class="card">
+            <h3>Calendario de Cantidades v1.0</h3>
+
+            <img src="img/RStudio/Calendario_v1.png"
+                 alt="Calendario">
+
+            <p>
+                Calendario de métricas utilizando calendR.
+            </p>
+
+            <a href="RStudio_Projects/Calendario_v1.R"
+               download
+               class="btn">
+                Descargar Script
+            </a>
+        </div>
+
+        <!-- NUEVOS PROYECTOS R -->
+        <div class="card">
+            <h3>Proyecto R #3</h3>
+
+            <img src="img/RStudio/proyecto3.png"
+                 alt="Proyecto">
+
+            <p>
+                Descripción del proyecto.
+            </p>
+
+            <a href="RStudio_Projects/proyecto3.R"
+               download
+               class="btn">
+                Descargar Script
+            </a>
+        </div>
+
     </div>
 
+</div>
 
-<script src="JS/script.js"></script>		
+<script src="JS/script.js"></script>
+
 </body>
 </html>
