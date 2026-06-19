@@ -241,11 +241,18 @@ header {
 	scroll-snap-align: start;
 	flex: 0 0 20em;
 	aspect-ratio: 5 / 3;
-	background-color: var(--primary-color);
+	background-color: white;/* var(--primary-color);*/
 	padding: 1em;
 	border-radius: .5em;
 	text-align: center;
 	align-content: center;
+
+    /*background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);*/
+
+
 }
 
 @media(max-width: 500px) {
