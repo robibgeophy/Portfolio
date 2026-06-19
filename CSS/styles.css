@@ -220,7 +220,7 @@ header {
 	background-color:#23324a; /*var(--brand-color);*/
 	font-family: Consolas;
 	font-size: 3rem;
-	color: #23324a;
+	color: white;
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
