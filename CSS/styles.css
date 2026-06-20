@@ -185,6 +185,9 @@ header {
 	anchor-name: --carousel;
 	scroll-snap-type: x mandatory;
 	scroll-marker-group: after;
+
+    padding-inline: 80px;
+    scroll-padding-inline:80px;
 }
 
 
