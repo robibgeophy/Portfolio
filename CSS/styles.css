@@ -84,7 +84,7 @@ header {
 }
 
 
-
+*/
 
 .card img {
     width: 100%;
@@ -93,7 +93,7 @@ header {
     border-radius: 4px;
     margin-bottom: 10px;
 }
-*/
+
 
 .btn {
     display: inline-block;
@@ -186,8 +186,8 @@ header {
 	scroll-snap-type: x mandatory;
 	scroll-marker-group: after;
 
-    padding-inline: 15px;
-    scroll-padding-inline:15px;
+    padding-inline: 80px;
+    scroll-padding-inline:80px;
 }
 
 
