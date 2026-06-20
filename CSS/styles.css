@@ -215,7 +215,7 @@ header {
 }
 
 .carousel::scroll-button(right), .carousel::scroll-button(left){
-	content: '▶';
+	content: '→';
 	border: none;
 	background-color:#23324a; /*var(--brand-color);*/
 	font-family: Consolas;
@@ -234,7 +234,7 @@ header {
 
 
 .carousel::scroll-button(left) {
-	content: '◀';
+	content: '←';
 	position-area: left center;
 	translate: 50%;
 }
