@@ -186,8 +186,8 @@ header {
 	scroll-snap-type: x mandatory;
 	scroll-marker-group: after;
 
-    padding-inline: 55px;
-    scroll-padding-inline:55px;
+    padding-inline: 35px;
+    scroll-padding-inline:35px;
 }
 
 
