@@ -187,7 +187,7 @@ header {
 	scroll-marker-group: after;
 
     padding-inline: 55px;
-    /*scroll-padding-inline:80px;*/
+    scroll-padding-inline:55px;
 }
 
 
