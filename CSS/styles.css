@@ -178,6 +178,7 @@ header {
 .carousel{
 	width: 100%;
 	overflow-x: auto;
+	overflow-y: visible;
 	margin: 3em auto;
 	display:flex;
 	gap: 1em;
