@@ -43,6 +43,11 @@ body {
     background: #333;
     font-size: 15px;
     
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z_index:1000;
 }
 
 .logo{
@@ -588,4 +593,57 @@ transform: translateX(-58%) !important;
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active{
     background: var(--primary);
+}
+
+.seccion{
+    min-height: 100vh;
+    padding: 100px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    scroll-margin-top:80px;
+}
+
+.inicio{
+    background: 
+    linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.6)
+    ),
+    url("../im/backgrounds/bg_inicio.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.acerca{
+    background: #111827;
+    color: white;
+}
+
+.habilidades{
+    background: #1e293b;
+    color: white;
+}
+
+.experiencia{
+    background: #0f172a;
+    color: white;
+}
+
+.portafolio{
+    background:#020617;
+    color:white;
+}
+
+.contacto{
+    background:#1d4ed8;
+    color:white;
+}
+
+html{
+    scroll-behavior:smooth;
 }

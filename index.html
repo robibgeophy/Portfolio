@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
     <link rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
@@ -22,12 +22,12 @@
 <nav class="navbar">
     <div class="logo">Mysite</div>
     <ul class="nav-link">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Experiencia</a></li>
-        <li><a href="#">Portafolio</a></li>
-            <li class="contacto"><a href="#">Contacto</a>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+            <li class="contacto"><a href="#contacto">Contacto</a>
                 <ul class="dropdown">
                         <li><a href="#">roberto.garza.geophy@gmail.com</a></li>
                         <li><a href="#">(+52) 81 21 98 80 51</a></li>
@@ -100,7 +100,48 @@
     </div>
 </section>
 
-<div class="tabs">
+<section id="inicio" class="seccion inicio">
+    <div class="contenido">
+        <h1> Mi Portafolio de Proyectos</h1>
+    </div>
+</section>
+
+<section id="acerca" class="seccion acerca">
+    <div class="perfil-contenido">
+        <h2>Sobre mí</h2>
+        <p> Tu información ...</p>
+    </div>
+</section>
+
+<section id="habilidades" class="seccion habilidades">
+    <h2>Herramientas</h2>
+
+    <div class="skills">
+            <span>Excel</span>
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>Python</span>
+            <span>RStudio</span>
+            <span>MATLAB</span>
+        </div>
+
+
+</section>
+
+<section id="experiencia" class="seccion experiencia">
+    <h2>Experiencia Profesional</h2>
+
+    <ul>
+        <li>Empresa 1...</li>
+        <li>Empresa 2...</li>
+        <li>Empresa 3...</li>
+    </ul>
+</section>
+
+
+<section id="portafolio" class="seccion portafolio">
+
+    <div class="tabs">
 
     <button class="tab-btn active"
             onclick="mostrarCategoria(event,'excel')">
@@ -315,6 +356,17 @@
     </div>
 
 </div>
+
+ 
+</section>
+
+
+<section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+
+    <p>roberto.garza.geophy@gmail.com</p>
+    <p>+52 81 21 98 80 51</p>
+</section>
 
 
 
