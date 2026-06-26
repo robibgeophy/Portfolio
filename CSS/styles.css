@@ -647,3 +647,184 @@ transform: translateX(-58%) !important;
 html{
     scroll-behavior:smooth;
 }
+
+/*==================================================
+                EXPERIENCIA
+===================================================*/
+
+.experiencia{
+
+    background:#101114;
+    padding:90px 10%;
+    color:#fff;
+
+}
+
+.experiencia h2{
+
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:60px;
+
+}
+
+.experience-container{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.experience-column{
+
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+
+}
+
+.experience-card{
+
+    background:#1b1c22;
+    padding:28px;
+    border-radius:10px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+    border-left:4px solid #00d6b8;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+}
+
+.experience-card h3{
+
+    font-size:22px;
+    margin-bottom:6px;
+
+}
+
+.experience-card h3 span{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#00d6b8;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.experience-card small{
+
+    display:block;
+
+    margin:18px 0;
+
+    color:#00d6b8;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.experience-card ul{
+
+    padding-left:18px;
+
+}
+
+.experience-card li{
+
+    color:#d5d5d5;
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+}
+
+/*=========================
+      HERRAMIENTAS
+=========================*/
+
+.experience-tools{
+
+    margin-top:22px;
+
+}
+
+.experience-tools strong{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+}
+
+.experience-tools span{
+
+    display:inline-block;
+
+    margin:4px;
+
+    padding:7px 14px;
+
+    background:#00d6b8;
+
+    color:#111;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.experience-tools span:hover{
+
+    background:#00b89f;
+
+    transform:scale(1.05);
+
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media (max-width:900px){
+
+.experience-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.experiencia{
+
+    padding:70px 7%;
+
+}
+
+}
