@@ -828,3 +828,170 @@ html{
 }
 
 }
+
+
+/*=============================
+        SKILLS
+=============================*/
+
+.skills-section{
+
+    background:#101114;
+    color:#fff;
+    padding:90px 10%;
+
+}
+
+.skills-section h2{
+
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:60px;
+
+}
+
+.skills-container{
+
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:70px;
+
+}
+
+/*-------------------------*/
+
+.technical-skills h3,
+.professional-skills h3{
+
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+
+}
+
+/*-------------------------*/
+
+.skill{
+
+    margin-bottom:22px;
+
+}
+
+.skill-info{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:15px;
+
+}
+
+.progress{
+
+    height:8px;
+    background:#444;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    height:100%;
+    background:#00d6b8;
+
+}
+
+/*-------------------------*/
+
+.circle-container{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.circle-card{
+
+    text-align:center;
+
+}
+
+.circle{
+
+    --percent:80;
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:
+    conic-gradient(
+        #00d6b8 calc(var(--percent)*1%),
+        #444 0
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+}
+
+.circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    background:#101114;
+
+    border-radius:50%;
+
+}
+
+.circle span{
+
+    position:relative;
+
+    z-index:2;
+
+    font-weight:bold;
+
+    font-size:22px;
+
+}
+
+.circle-card p{
+
+    margin-top:15px;
+
+    font-size:15px;
+
+}
+
+/*-------------------------*/
+
+@media(max-width:900px){
+
+.skills-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.circle-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
