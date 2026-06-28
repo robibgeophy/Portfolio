@@ -566,11 +566,81 @@
 </section>
 
 
-<section id="contacto" class="seccion contacto">
+<!-- <section id="contacto" class="seccion contacto">
     <h2>Contacto</h2>
 
     <p>roberto.garza.geophy@gmail.com</p>
     <p>+52 81 21 98 80 51</p>
+</section> -->
+
+
+<section id="contacto" class="seccion contacto">
+
+    <h2>Contacto</h2>
+
+    <div class="contact-container">
+
+        <!-- Información -->
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+
+            <p>
+                📧
+                <a href="mailto:roberto.garza.geophy@gmail.com">
+                    roberto.garza.geophy@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱
+                <a href="tel:+528121988051">
+                    (+52) 812-198-8051
+                </a>
+            </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form">
+
+            <h3>Envíame un mensaje</h3>
+
+            <form action="https://formsubmit.co/roberto.garza.geophy@gmail.com" method="POST">
+
+                <input
+                    type="text"
+                    name="Nombre"
+                    placeholder="Tu nombre"
+                    required>
+
+                <input
+                    type="email"
+                    name="Correo"
+                    placeholder="Tu correo"
+                    required>
+
+                <textarea
+                    name="Mensaje"
+                    rows="6"
+                    placeholder="Escribe tu mensaje..."
+                    required></textarea>
+
+                <!-- Evita captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redirección después de enviar -->
+                <input type="hidden" name="_next"
+                       value="https://tupagina.com/gracias.html">
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </section>
 
 
