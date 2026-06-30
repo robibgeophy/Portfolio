@@ -483,6 +483,7 @@ html {
     height: 42rem;
     border-radius: 2rem;
     object-fit: cover;
+    border: 2px;
 }
 
 .tranding-slide .tranding-slide-content{
